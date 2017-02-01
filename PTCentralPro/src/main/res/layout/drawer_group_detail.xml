@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gray"
+    android:orientation="vertical"
+    android:padding="@dimen/view_margin"
+    tools:context="com.fitforbusiness.nafc.group.GroupDrawerFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical"
+        android:padding="@dimen/view_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.fitforbusiness.framework.view.RoundedImageView
+
+                android:id="@+id/ivGroup"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+
+                android:clickable="true"
+                android:padding="@dimen/image_padding"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/bChooseFile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@android:drawable/ic_input_add"
+
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    style="@style/input_field_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:text="@string/email"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/etGroupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:background="@drawable/text_field"
+
+
+                    android:hint="Group Name"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/view_margin">
+
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/bHeaders"
+                    style="@style/brown_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:text="Members"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/bAddClients"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:background="@drawable/custom_btn_blue"
+                    android:text="Add Clients"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone" />
+
+                <ListView
+
+
+                    android:id="@+id/lvClientList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

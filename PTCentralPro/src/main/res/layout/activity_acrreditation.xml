@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical"
+        android:padding="@dimen/view_margin">
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Course Name"
+                    android:textSize="@dimen/label_font_size" />
+
+                <EditText
+
+                    android:id="@+id/etCourseName"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:hint="Course Name/Title"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Course #"
+                    android:textSize="@dimen/label_font_size" />
+
+                <EditText
+                    android:id="@+id/etCourseNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:hint="Course Number"
+                    android:inputType="textCapSentences"
+                    android:paddingLeft="@dimen/view_margin" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Point/Hours"
+                    android:textSize="@dimen/label_font_size" />
+
+                <EditText
+
+                    android:id="@+id/etPoint"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:hint="Point/Hours"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="@dimen/view_margin" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:visibility="visible">
+
+                    <com.fitforbusiness.framework.view.MySwitch
+                        android:id="@+id/swIsHour"
+                        style="@style/mySwitchStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="left"
+
+                        mySwitch:textOff="Hour"
+                        mySwitch:textOn="Point" />
+                </LinearLayout>
+
+                <ToggleButton
+                    android:id="@+id/tbIsHour"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight=".5"
+                    android:text=""
+                    android:textOff="Hour"
+                    android:textOn="Point"
+                    android:visibility="gone" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="RTO"
+                    android:textSize="@dimen/label_font_size" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/etRTO"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:hint="Registered Training Org."
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/view_margin" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/acRTO"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:hint="Registered Training Org."
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/view_margin" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Completed"
+                    android:textSize="@dimen/label_font_size" />
+
+                <Button
+                    android:id="@+id/bCompleteDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:gravity="left|center_vertical"
+                    android:hint="Completed Date"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Linked File"
+                    android:textSize="@dimen/label_font_size" />
+
+                <Button
+                    android:id="@+id/bChooseFromDropBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:paddingLeft="10dp"
+                    android:text="Choose from dropbox"
+
+                    android:textColor="#0aa" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:text=""
+                    android:textSize="@dimen/calendar_font_size" />
+
+                <Button
+                    android:id="@+id/bView"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:text="View"
+                    android:textColor="#0aa" />
+
+                <Button
+                    android:id="@+id/bUnlike"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:text="Unlink"
+                    android:textColor="@color/red" />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

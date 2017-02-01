@@ -1,0 +1,362 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/view_margin"
+        android:paddingRight="@dimen/view_margin"
+        android:paddingTop="@dimen/view_margin"
+        tools:context=".dashboard.NewsFeedsFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                style="@style/header_orange"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="2"
+
+                android:gravity="left|center_vertical"
+
+                android:padding="@dimen/view_margin"
+                android:text="At A Glance" />
+
+            <TextView
+                android:id="@+id/bDayFilter"
+                style="@style/header_orange"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_btn_orange"
+                android:clickable="true"
+                android:drawableEnd="@drawable/spinner_ab_disabled_styled"
+                android:paddingRight="10dp"
+                android:text="Week"
+                android:textColor="@color/green" />
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/bWorkoutHeading"
+            android:orientation="horizontal"
+
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_btn_bg"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvClientCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|center_vertical"
+                    android:text="0"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center|bottom"
+                    android:singleLine="true"
+                    android:text="New Clients"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/custom_btn_bg"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+                <TextView
+
+                    android:id="@+id/tvSessionCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:gravity="center|center_vertical"
+                    android:text="0"
+                    android:textSize="50dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center|center_vertical"
+                    android:singleLine="true"
+                    android:text="Sessions"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_btn_bg"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvMembershipCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center|center_vertical"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center|center_vertical"
+                    android:singleLine="true"
+                    android:text="Memberships"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <Button
+
+            style="@style/header_orange"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/lvSessionList"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/view_margin"
+            android:text="Latest Client" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn_bg"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:weightSum="5">
+
+            <com.fitforbusiness.framework.view.RoundedImageView
+                android:id="@+id/ivClientImage"
+                android:layout_width="110dp"
+                android:layout_height="110dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                 <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+
+                    android:textColor="@color/black"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:id="@+id/tvNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+
+                    android:textColor="@color/gray"
+                    android:textSize="20dp" />
+
+                <TextView
+
+                    android:id="@+id/tvSessions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bWorkoutExercisesHeading"
+            style="@style/brown_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/lvSessionList"
+            android:gravity="left"
+            android:text="Workout and Exercise" />
+
+        <Button
+            android:id="@+id/bWorkoutHeading"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/bWorkoutExercisesHeading"
+            android:background="@drawable/button_gray"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Workouts"
+            android:textColor="@color/white" />
+
+        <TableRow
+            android:id="@+id/totalWorkouts"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/bWorkoutHeading"
+            android:background="@drawable/custom_btn_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="Total Workouts"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvTotalWorkouts"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="right|center_vertical"
+                android:text="4"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/topWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/totalWorkouts"
+            android:background="@drawable/custom_btn_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="left|center_vertical"
+                android:text="Top Workout"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvTopWorkout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:text="One more workout"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+
+        <Button
+
+            android:id="@+id/bExerciseHeadings"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/topWorkout"
+            android:background="@drawable/button_gray"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Exercises"
+            android:textColor="@color/white" />
+
+        <TableRow
+            android:id="@+id/totalExercises"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/bExerciseHeadings"
+            android:background="@drawable/custom_btn_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="Total Exercises"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvTotalExercise"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="right|center_vertical"
+                android:text="4"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/topExercises"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/totalExercises"
+            android:background="@drawable/custom_btn_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:gravity="left|center_vertical"
+                android:text="Top Exercise"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvTopExercise"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ellipsize="end"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:text="One more Exercise"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+
+    </LinearLayout>
+</ScrollView>

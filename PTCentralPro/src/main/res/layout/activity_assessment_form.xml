@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/view_margin"
+    android:paddingLeft="@dimen/view_margin"
+    android:paddingRight="@dimen/view_margin"
+    android:paddingTop="@dimen/view_margin"
+    tools:context="com.fitforbusiness.nafc.assessment.AssessmentFormActivity">
+
+    <Button
+
+        style="@style/brown_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Assessment Forms" />
+
+    <ListView
+        android:id="@+id/lvAssessmentForms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingRight="@dimen/view_margin">
+
+
+    <ToggleButton
+        android:id="@+id/tbHistorical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/toggle_button_selector"
+
+        android:paddingLeft="@dimen/view_margin"
+        android:paddingRight="@dimen/view_margin"
+        android:textColor="@color/white"
+
+        android:textOff="C"
+        android:textOn="H"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="4dp"
+        android:paddingTop="7dp">
+
+        <com.fitforbusiness.framework.view.MySwitch
+            android:id="@+id/tbSwitch"
+            style="@style/mySwitchStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            mySwitch:switchMinHeight="35dp"
+            mySwitch:textOff="Current"
+            mySwitch:textOn="Historical" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/llContainer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/llContainer"
+        android:clickable="true"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:minHeight="30dp"
+        android:singleLine="true"
+        android:text="Qualification"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</RelativeLayout>

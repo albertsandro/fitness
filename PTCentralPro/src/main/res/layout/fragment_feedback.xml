@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feedback_root"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_white"
+    android:orientation="vertical"
+    android:padding="@dimen/view_margin"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+  <LinearLayout
+      android:visibility="gone"
+      android:id="@+id/feedback_navigation_bar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true">
+
+    <Button
+        android:background="@drawable/custom_btn_gray"
+        android:id="@+id/feedback_cancel"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Cancel"/>
+
+    <Button
+        android:background="@drawable/custom_btn_orange"
+        android:id="@+id/feedback_send"
+        android:layout_width="0.0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Send"
+         />
+  </LinearLayout>
+
+<!--  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentTop="true"
+      android:fillViewport="true"
+      android:layout_above="@id/feedback_navigation_bar">-->
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:text="Feedback"
+    style="@style/header_orange"/>
+
+      <EditText
+          android:layout_marginTop="@dimen/view_margin"
+          android:padding="@dimen/view_margin"
+          android:id="@+id/feedback_message"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          style="@style/MessageEditText"/>
+
+      <EditText
+
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_marginTop="@dimen/view_margin"
+          android:background="@drawable/text_field"
+          android:ems="30"
+          android:hint="Email"
+          android:inputType="textCapWords"
+          android:paddingLeft="@dimen/view_margin"
+          android:id="@+id/feedback_email"
+
+           />
+      <CheckBox
+          android:text="Reporting an Issue?"
+          android:id="@+id/feedback_is_bug"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          />
+    </LinearLayout>
+ <!-- </ScrollView>-->
+</ScrollView>

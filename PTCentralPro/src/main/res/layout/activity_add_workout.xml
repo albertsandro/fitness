@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gray"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical"
+        android:padding="@dimen/view_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <ImageView
+
+                android:id="@+id/ivWorkout"
+                android:layout_width="110dp"
+                android:layout_height="115dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:background="@drawable/green_button"
+                android:clickable="true"
+                android:padding="@dimen/view_margin"
+                tools:ignore="ContentDescription" />
+
+            <Button
+                android:id="@+id/bChooseFile"
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_alignBottom="@+id/ivWorkout"
+                android:layout_alignLeft="@id/ivWorkout"
+                android:background="@drawable/custom_btn_choose"
+                android:text="Select Image"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+
+            >
+
+
+            <EditText
+                android:id="@+id/etWorkoutName"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/view_margin"
+                android:background="@drawable/text_field"
+
+                android:hint="Name"
+
+                android:inputType="textCapWords"
+                android:paddingLeft="@dimen/view_margin" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/view_margin"
+                android:background="@drawable/text_field"
+
+                android:hint="Description"
+                android:inputType="textCapSentences"
+                android:paddingLeft="@dimen/view_margin" />
+
+
+            <Button
+                android:id="@+id/bAddExercise"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:layout_marginTop="@dimen/view_margin"
+                android:background="@drawable/custom_btn_blue"
+                android:text="Add Exercise"
+                android:textColor="@color/white" />
+
+            <ListView
+
+                android:id="@+id/lvExercise"
+                android:layout_width="match_parent"
+                android:layout_height="600dp">
+
+            </ListView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

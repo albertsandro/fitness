@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_margin">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:gravity="right|center_vertical"
+                    android:text="Course Name"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/etCourseName"
+                    style="@style/input_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_weight="1"
+                    android:ems="30"
+                    android:hint="Course Name/Title"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:gravity="right|center_vertical"
+                    android:text="Course #"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/etCourseNumber"
+                    style="@style/input_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_weight="1"
+                    android:ems="30"
+                    android:hint="Course Number"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:gravity="right|center_vertical"
+                    android:text="Point/Hours"
+                    android:textSize="20dp" />
+
+                <EditText
+
+                    android:id="@+id/etPoint"
+                    style="@style/input_field"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_weight=".5"
+                    android:ems="30"
+                    android:hint="Point/Hours"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="10dp" />
+
+                <ToggleButton
+                    android:id="@+id/tbIsHour"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight=".5"
+                    android:text=""
+                    android:textOff="Hour"
+                    android:textOn="Point" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:gravity="right|center_vertical"
+                    android:text="RTO"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/etRTO"
+                    style="@style/input_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_weight="1"
+                    android:ems="30"
+                    android:hint="Registered Training Org."
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:gravity="right|center_vertical"
+                    android:text="Completed"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bCompleteDate"
+                    style="@style/input_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_weight="1"
+                    android:ems="30"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Completed Date"
+                    android:textColor="@color/gray" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:gravity="right|center_vertical"
+                    android:text="Linked File"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bChooseFromDropBox"
+                    style="@style/text_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_weight="1"
+                    android:ems="30"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="Choose from dropbox"
+
+                    android:textColor="#0aa" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/bView"
+                    style="@style/input_field"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_weight=".5"
+                    android:ems="30"
+
+
+                    android:text="View"
+                    android:textColor="#0aa" />
+
+                <Button
+                    android:id="@+id/bUnlike"
+                    style="@style/input_field"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:layout_weight=".5"
+                    android:ems="30"
+                    android:text="Unlink"
+                    android:textColor="@color/red" />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/bSave"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_btn_orange"
+
+                android:text="Update"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bCancel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_btn_gray"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivCertificates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/dropbox"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

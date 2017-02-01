@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="com_appboy_api_key">443d0cac-aceb-40ad-b9de-3691b8002d0f</string>
+    <integer name="com_appboy_data_flush_interval_bad_network">30</integer>
+    <integer name="com_appboy_data_flush_interval_good_network">15</integer>
+    <integer name="com_appboy_data_flush_interval_great_network">10</integer>
+    <integer name="com_appboy_session_timeout">10</integer>
+    <bool name="com_appboy_push_gcm_messaging_registration_enabled">true</bool>
+    <string name="com_appboy_push_gcm_sender_id" translatable="false">245353229386</string>
+    <drawable name="com_appboy_push_small_notification_icon">@drawable/pt_app_icon</drawable>
+</resources>

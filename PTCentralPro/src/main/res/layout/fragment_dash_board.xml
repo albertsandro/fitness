@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/view_margin"
+    android:paddingRight="@dimen/view_margin"
+    android:paddingTop="@dimen/view_margin"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bHeading"
+            style="@style/brown_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="left"
+            android:text="Today" />
+
+        <ListView
+            android:id="@+id/lvSessionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bHeading"
+            android:minHeight="100dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <Button
+            style="@style/header_orange"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/lvSessionList"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/view_margin"
+            android:text="Notifications and Alerts" />
+
+
+
+        <ListView
+            android:id="@+id/lvNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/button_gray">
+
+            <TextView
+                android:id="@+id/tvTotalCecPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/view_margin"
+                android:text="CEC Points"
+                android:textColor="@color/white"
+                android:textSize="@dimen/label_font_size" />
+
+            <TextView
+                android:id="@+id/tvTotalCecHours"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+                android:paddingRight="@dimen/view_margin"
+                android:text="Training Hours:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/label_font_size" />
+        </TableRow> </LinearLayout>
+
+</LinearLayout>

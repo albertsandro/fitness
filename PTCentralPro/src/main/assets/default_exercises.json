@@ -1,0 +1,571 @@
+{
+  "exercise": [
+    {
+      "exercise_id": "1",
+      "name": "Air Squat",
+      "photo_url": "exercise_1.jpg",
+      "muscle_group": "Legs",
+      "description": "Air Squat",
+      "tag": "Body Weight Squat",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 3
+        }
+      ]
+    },
+    {
+      "exercise_id": "2",
+      "name": "Bench Press Barbell",
+      "photo_url": "exercise_2.jpg",
+      "muscle_group": "Chest",
+      "description": "Bench Press Barbell",
+      "tag": "Bench Press Barbell",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "3",
+      "name": "Bench Press Dumb Bell",
+      "photo_url": "exercise_3.jpg",
+      "muscle_group": "Chest",
+      "description": "Bench Press Dumb Bell",
+      "tag": "Bench Press Dumb Bell",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "4",
+      "name": "Bent Over Barbell Row Bar",
+      "photo_url": "exercise_4.jpg",
+      "muscle_group": "Back",
+      "description": "Bent Over Barbell Row Bar",
+      "tag": "Back Bend Over Row Bar",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "5",
+      "name": "Bent Over Row One Arm Dumb Bell",
+      "photo_url": "exercise_5.jpg",
+      "muscle_group": "Back",
+      "description": "Bent Over Row One Arm Dumb Bell",
+      "tag": "Back Bent Over Row One Arm Dumb Bell",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "6",
+      "name": "Bicep Curl Dumb Bell",
+      "photo_url": "exercise_6.jpg",
+      "muscle_group": "Arms",
+      "description": "Bicep Curl Dumb Bell",
+      "tag": "Bicep Curl Dumb Bell",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "7",
+      "name": "Bicep Eze Bar",
+      "photo_url": "exercise_7.jpg",
+      "muscle_group": "Arms",
+      "description": "Bicep Eze Bar",
+      "tag": "Bicep Curl Eze Bar",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "8",
+      "name": "Box Jumps 24\"",
+      "photo_url": "exercise_8.jpg",
+      "muscle_group": "Polymetrics",
+      "description": "Box Jumps 24inch",
+      "tag": "Box Jump",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 3
+        }
+      ]
+    },
+    {
+      "exercise_id": "9",
+      "name": "Box Jumps 30\"",
+      "photo_url": "exercise_9.jpg",
+      "muscle_group": "Polymetrics",
+      "description": "Box Jumps 30inch",
+      "tag": "Box Jump",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 3
+        }
+      ]
+    },
+    {
+      "exercise_id": "10",
+      "name": "Burpee",
+      "photo_url": "exercise_10.jpg",
+      "muscle_group": "Polymetrics",
+      "description": "Burpee",
+      "tag": "Burpee",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 3
+        }
+      ]
+    },
+    {
+      "exercise_id": "11",
+      "name": "Calf Raises Straight Legged",
+      "photo_url": "exercise_11.jpg",
+      "muscle_group": "Legs",
+      "description": "Calf Raises Straight Legged",
+      "tag": "Calf Raises Straight Legged",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "12",
+      "name": "Core - Crunch Straight",
+      "photo_url": "exercise_12.jpg",
+      "muscle_group": "Core",
+      "description": "Core - Crunch Straight",
+      "tag": "Core Abs Crunch Straight",
+      "measurement": [
+        {
+          "measurement_id": 2
+        }
+      ]
+    },
+    {
+      "exercise_id": "13",
+      "name": "Core - Crunch Twisting On Fitball",
+      "photo_url": "exercise_13.jpg",
+      "muscle_group": "Core",
+      "description": "Core - Crunch Twisting on Fitball",
+      "tag": "Core Abs Crunch Twisting Fitball",
+      "measurement": [
+        {
+          "measurement_id": 2
+        }
+      ]
+    },
+    {
+      "exercise_id": "14",
+      "name": "Plank On Toes",
+      "photo_url": "exercise_14.jpg",
+      "muscle_group": "Core",
+      "description": "Plank On Toes",
+      "tag": "Core Static Hold",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "15",
+      "name": "Deadlift",
+      "photo_url": "exercise_15.jpg",
+      "muscle_group": "Legs Back",
+      "description": "Deadlift",
+      "tag": "Deadlift",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "16",
+      "name": "Kettlebell Swing",
+      "photo_url": "exercise_16.jpg",
+      "muscle_group": "Core",
+      "description": "Kettlebell Swing",
+      "tag": "Kettlebell Swing",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 3
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "17",
+      "name": "Knees To Elbows",
+      "photo_url": "exercise_17.jpg",
+      "muscle_group": "polymetrics",
+      "description": "Knees To Elbows",
+      "tag": "Knees To Elbow",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 3
+        }
+      ]
+    },
+    {
+      "exercise_id": "18",
+      "name": "Lateral Pulldown Over Grip",
+      "photo_url": "exercise_18.jpg",
+      "muscle_group": "Back",
+      "description": "Lateral Pulldown Over Grip",
+      "tag": "Lat Pulldown",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "19",
+      "name": "Lunge Static ",
+      "photo_url": "exercise_19.jpg",
+      "muscle_group": "Legs",
+      "description": "Lunge Static",
+      "tag": "Lunge Static",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "20",
+      "name": "Lunge Traveling",
+      "photo_url": "exercise_20.jpg",
+      "muscle_group": "Legs",
+      "description": "Lunge Traveling",
+      "tag": "Lunge Traveling",
+      "measurement": [
+        {
+          "measurement_id": 1
+        },
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "21",
+      "name": "Power Snatch",
+      "photo_url": "exercise_21.jpg",
+      "muscle_group": "Core",
+      "description": "Power Snatch",
+      "tag": "Power Snatch",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "22",
+      "name": "Pull-Up",
+      "photo_url": "exercise_22.jpg",
+      "muscle_group": "Back Shoulders",
+      "description": "Pull-Up",
+      "tag": "Bodyweight Pull-Up",
+      "measurement": [
+        {
+          "measurement_id": 2
+        }
+      ]
+    },
+    {
+      "exercise_id": "23",
+      "name": "Push-Up",
+      "photo_url": "exercise_23.jpg",
+      "muscle_group": "Chest",
+      "description": "Push-Up",
+      "tag": "Bodyweight Push-Up",
+      "measurement": [
+        {
+          "measurement_id": 2
+        }
+      ]
+    },
+    {
+      "exercise_id": "24",
+      "name": "Reverse Flyes Bent Over Dumb Bell",
+      "photo_url": "exercise_24.jpg",
+      "muscle_group": "Shoulders Back",
+      "description": "Reverse Flyes Bent Over Dumb Bell",
+      "tag": "Back Reverse Flyes Bent Over Dumb Bell",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "25",
+      "name": "Row Seated",
+      "photo_url": "exercise_25.jpg",
+      "muscle_group": "Cardio",
+      "description": "Row Seated",
+      "tag": "Row",
+      "measurement": [
+        {
+          "measurement_id": 1
+        },
+        {
+          "measurement_id": 3
+        }
+      ]
+    },
+    {
+      "exercise_id": "26",
+      "name": "Running",
+      "photo_url": "exercise_26.jpg",
+      "muscle_group": "Cardio",
+      "description": "Running",
+      "tag": "Running",
+      "measurement": [
+        {
+          "measurement_id": 1
+        },
+        {
+          "measurement_id": 3
+        }
+      ]
+    },
+    {
+      "exercise_id": "27",
+      "name": "Shoulder Laterall Raises Dumb Bells",
+      "photo_url": "exercise_27.jpg",
+      "muscle_group": "Shoulders",
+      "description": "Shoulder Laterall Raises Dumb Bells",
+      "tag": "Shoulder Lat Raises Dumb Bells",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "28",
+      "name": "Shoulder Press Dumb Bells",
+      "photo_url": "exercise_28.jpg",
+      "muscle_group": "Shoulders",
+      "description": "Shoulder Press Dumb Bells",
+      "tag": "Shoulder Press Dumb Bells",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "29",
+      "name": "Sit-Up",
+      "photo_url": "exercise_29.jpg",
+      "muscle_group": "Core Abs",
+      "description": "Sit-Up",
+      "tag": "Core Abs Sit-Up",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 3
+        }
+      ]
+    },
+    {
+      "exercise_id": "30",
+      "name": "Skipping",
+      "photo_url": "exercise_30.jpg",
+      "muscle_group": "Cardio",
+      "description": "Skipping",
+      "tag": "Cardio",
+      "measurement": [
+        {
+          "measurement_id": 3
+        }
+      ]
+    },
+    {
+      "exercise_id": "31",
+      "name": "Squat",
+      "photo_url": "exercise_31.jpg",
+      "muscle_group": "Legs",
+      "description": "Squat",
+      "tag": "Squat Legs",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "32",
+      "name": "Thruster",
+      "photo_url": "exercise_32.jpg",
+      "muscle_group": "Core",
+      "description": "Thruster",
+      "tag": "Thruster",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "33",
+      "name": "Tricep Dips",
+      "photo_url": "exercise_33.jpg",
+      "muscle_group": "Arms ",
+      "description": "Tricep Dips",
+      "tag": "Tricep Dips",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "34",
+      "name": "Tricep Pushdowns Bar",
+      "photo_url": "exercise_34.jpg",
+      "muscle_group": "Arms ",
+      "description": "Tricep Pushdowns Bar",
+      "tag": "Tricep Pushdowns Bar",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "35",
+      "name": "Tricep Pushdown Rope",
+      "photo_url": "exercise_35.jpg",
+      "muscle_group": "Arms ",
+      "description": "Tricep Pushdown Rope",
+      "tag": "Tricep Pushdowns Rope",
+      "measurement": [
+        {
+          "measurement_id": 2
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    },
+    {
+      "exercise_id": "36",
+      "name": "Wall Ball",
+      "photo_url": "exercise_36.jpg",
+      "muscle_group": "Core",
+      "description": "Wall Ball",
+      "tag": "Wall Ball",
+      "measurement": [
+        {
+          "measurement_id": 3
+        },
+        {
+          "measurement_id": 4
+        }
+      ]
+    }
+  ]
+}

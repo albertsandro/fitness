@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_gray"
+    tools:context="com.fitforbusiness.nafc.membership.AddMemberShipActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical"
+        android:padding="@dimen/view_margin"
+        tools:ignore="ScrollViewSize">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/view_margin"
+
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:id="@+id/row1"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Membership for"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage"
+                    />
+
+                <com.fitforbusiness.framework.view.MySwitch
+                    android:id="@+id/switch_type"
+                    style="@style/mySwitchStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:checked="true"
+                    mySwitch:textOff="Group"
+                    mySwitch:textOn="Client" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Clients/Group"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <EditText
+
+                    android:id="@+id/etClientOrGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:ems="30"
+                    android:focusableInTouchMode="false"
+                    android:hint="Select client/group"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Description"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:ems="30"
+                    android:focusableInTouchMode="false"
+                    android:hint="Description"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Number of Sessions"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <EditText
+                    android:id="@+id/etNoOfSessions"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:ems="30"
+                    android:focusableInTouchMode="false"
+                    android:hint="# of Sessions"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvTitleCostPerSession"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="@string/title_cost_per_session"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <EditText
+                    android:id="@+id/etCostPerSession"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:ems="30"
+                    android:focusableInTouchMode="false"
+                    android:hint="Cost Per Session"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/view_margin"
+
+                android:orientation="horizontal"
+                android:weightSum="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Recurring Payment"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <com.fitforbusiness.framework.view.MySwitch
+                    android:id="@+id/tbRecurringPayment"
+                    style="@style/mySwitchStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    mySwitch:textOff="   No    "
+                    mySwitch:textOn="Yes" />
+
+                <com.fitforbusiness.framework.view.MySwitch
+                    android:id="@+id/pickup3"
+                    style="@style/mySwitchStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    mySwitch:backgroundMask="@drawable/smask_background_copy"
+                    mySwitch:leftBackground="@drawable/sleft_background_copy"
+                    mySwitch:pushStyle="true"
+                    mySwitch:rightBackground="@drawable/sright_background_copy"
+                    mySwitch:textOff="Pepsi"
+                    mySwitch:textOn="Coke"
+                    mySwitch:textOnThumb="false"
+                    mySwitch:thumb="@drawable/stoggle_copy"
+                    mySwitch:thumbExtraMovement="23dp"
+                    mySwitch:track="@drawable/sgroove_copy"
+                    mySwitch:trackTextPadding="2dp" />
+
+                <ToggleButton
+                    android:id="@+id/switch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:gravity="left|center_vertical"
+                    android:hint="Cost Per Session"
+                    android:inputType="number"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textOff="No"
+                    android:textOn="Yes"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Interval Period"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <Button
+                    android:id="@+id/bIntervalPeriod"
+                    style="@style/button_text_box"
+                    android:hint="Interval Period" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Interval #"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <Button
+                    android:id="@+id/bInterval"
+                    style="@style/button_text_box"
+                    android:hint="Interval #"
+
+                    />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/trThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Currency"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <Button
+                    android:id="@+id/bCurrency"
+                    style="@style/button_text_box"
+                    android:hint="Currency" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tlNoOfClients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:visibility="visible"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:paddingRight="@dimen/view_margin"
+                    android:text="Number Of Clients"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <EditText
+
+                    android:id="@+id/etNoOfClients"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:ems="30"
+                    android:enabled="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Number Of Clients"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tvTitlePackageTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:text="@string/title_package_total"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <EditText
+                    android:id="@+id/etPackageTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:clickable="false"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="0"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+
+            android:id="@+id/bAddClients"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/view_margin"
+            android:background="@drawable/custom_btn_blue"
+            android:text="Add Clients"
+            android:textColor="@color/white" />
+
+        <ListView
+
+            android:id="@+id/lvClientList"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:minHeight="50dp"
+            tools:ignore="NestedScrolling">
+
+        </ListView>
+    </LinearLayout>
+</ScrollView>
+

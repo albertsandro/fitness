@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="2"
+    tools:context="com.fitforbusiness.nafc.client.ClientDetailActivity$PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/brown_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:layout_marginTop="@dimen/view_margin"
+            android:text="Session Details"
+            android:visibility="visible"
+            tools:ignore="HardcodedText" />
+
+        <ListView
+            android:id="@+id/lvSessionDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/brown_button"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            android:layout_marginTop="@dimen/view_margin"
+            android:text="Pre-Workout Assessment Details"
+            android:visibility="visible"
+            tools:ignore="HardcodedText" />
+
+        <ListView
+            android:id="@+id/lvPreWorkOutAssessmentDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

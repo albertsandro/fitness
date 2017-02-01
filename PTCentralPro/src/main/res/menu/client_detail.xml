@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.fitforbusiness.nafc.client.ClientDetailActivity">
+
+    <item
+        android:id="@+id/menuNewSession"
+        android:orderInCategory="100"
+        android:title="Session"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuNewPreWorkOutAssessment"
+        android:orderInCategory="100"
+        android:title="Assessment"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuMembership"
+        android:orderInCategory="100"
+        android:title="Membership"
+        app:showAsAction="never" />
+
+
+</menu>

@@ -1,0 +1,65 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:1.0.0'
+        //classpath 'com.dwolla:dwolla-java-sdk:1.1.+'
+        classpath 'io.fabric.tools:gradle:1.+'
+
+    }
+}
+repositories {
+    mavenCentral()
+    jcenter()
+    maven { url "http://appboy.github.io/appboy-android-sdk/sdk" }
+    maven { url 'https://maven.fabric.io/public' }
+}
+apply plugin: 'android'
+apply plugin: 'io.fabric'
+
+repositories {
+    mavenCentral()
+    maven { url 'http://download.crashlytics.com/maven' }
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.2'
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+    }
+    productFlavors {
+    }
+    buildTypes {
+    }
+}
+android {
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+    }
+}
+dependencies {
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/dropbox-android-sdk-1.6.1.jar')
+    compile files('libs/httpmime-4.0.3.jar')
+    compile files('libs/json_simple-1.1.jar')
+    compile files('libs/stripe-java-latest.jar')
+    compile files('libs/twitter4j-core-4.0.2.jar')
+    compile 'com.android.support:appcompat-v7:19.+'
+    compile 'com.android.support:support-v4:19.+'
+    compile 'com.appboy:android-sdk-jar:1.5.+'
+    compile 'com.appboy:android-sdk-ui:1.5.+'
+    compile 'asia.ivity.android:drag-sort-listview:1.0'
+    compile 'com.google.android.gms:play-services-base:6.5.87'
+    compile('com.crashlytics.sdk.android:crashlytics:2.2.2@aar') {
+        transitive = true;
+    }
+    compile files('libs/MobileAppTracker-3.7.1.jar')
+    compile 'com.parse.bolts:bolts-android:1.2.0'
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+}

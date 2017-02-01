@@ -1,0 +1,95 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Preference android:title="Assessment Forms">
+        <intent android:action="com.fitforbusiness.nafc.AssessmentFormActivity" />
+    </Preference>
+    <Preference android:title="Link with DropBox">
+        <intent android:action="com.fitforbusiness.dropbox.DropboxSyncFragment" />
+
+    </Preference>
+
+    <Preference android:title="Link with Stripe">
+        <intent android:action="com.fitforbusiness.nafc.payment.stripe.activity.StripOAuthActivity" />
+
+    </Preference>
+   <!-- <Preference android:title="Link with Dwolla">
+        <intent android:action="fitforbusinessorbusiness.ptcentralpro.payment.dwolla.DwollaOAuthActivity" />
+    </Preference>-->
+
+    <Preference android:title="Link with Twitter">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.itpp.oauth.twitter.TwitterConnectActivity"
+            android:targetPackage="com.itpp.ptcentralpro" />
+        <!-- <intent
+             android:action="fitforbusinessorbusiness.oauth.twitter.TwitterConnectActivity"
+             android:targetPackage="fitforbusinessorbusiness.oauth.twitter" />
+ -->
+    </Preference>
+
+    <ListPreference
+        android:cacheColorHint="@android:color/transparent"
+        android:defaultValue="@string/default_currency_value"
+        android:entries="@array/pref_currency_titles"
+        android:entryValues="@array/pref_currency_values"
+        android:key="currency"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_currency" />
+
+    <ListPreference
+        android:cacheColorHint="@android:color/transparent"
+        android:defaultValue="15"
+        android:entries="@array/pref_sync_frequency_titles"
+        android:entryValues="@array/pref_sync_frequency_values"
+        android:key="sync_frequency"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_sync_frequency" />
+
+    <ListPreference
+        android:cacheColorHint="@android:color/transparent"
+        android:defaultValue="30"
+        android:entries="@array/pref_session_alert_titles"
+        android:entryValues="@array/pref_session_alert_values"
+        android:key="session_alert"
+        android:summary="@string/pref_summary_session_alert"
+        android:dialogTitle="@string/pref_dialogTitle_session_alert"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_session_alert" />
+
+    <PreferenceCategory android:title="Unit Metrics"
+        >
+        <ListPreference
+            android:cacheColorHint="@android:color/transparent"
+            android:defaultValue="@string/default_unit_distance_value"
+            android:entries="@array/pref_unit_distance_titles"
+            android:entryValues="@array/pref_unit_distance_values"
+            android:key="unit_distance"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_unit_distance" />
+        <ListPreference
+            android:cacheColorHint="@android:color/transparent"
+            android:defaultValue="@string/default_unit_weight_value"
+            android:entries="@array/pref_unit_weight_titles"
+            android:entryValues="@array/pref_unit_weight_values"
+            android:key="unit_weight"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_unit_weight" />
+        <ListPreference
+            android:cacheColorHint="@android:color/transparent"
+            android:defaultValue="@string/default_unit_time_value"
+            android:entries="@array/pref_unit_time_titles"
+            android:entryValues="@array/pref_unit_time_values"
+            android:key="sync_time"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_unit_time" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

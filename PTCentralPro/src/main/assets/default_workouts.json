@@ -1,0 +1,78 @@
+{
+  "workout": [
+    {
+      "workout_id": "1",
+      "photo_url": "workout_1.jpg",
+      "name": "Angie",
+      "description": "100 pull ups 100 push ups 100 sit ups 100 squats",
+      "exercise": [
+        {
+          "exercise_id": 22
+        },
+        {
+          "exercise_id": 23
+        },
+        {
+          "exercise_id": 29
+        },
+        {
+          "exercise_id": 31
+        }
+      ]
+    },
+    {
+      "workout_id": "2",
+      "photo_url": "workout_2.jpg",
+      "name": "Barbara",
+      "description": "20 pull ups 30 push ups 40 sit ups 50 squats",
+      "exercise": [
+        {
+          "exercise_id": 22
+        },
+        {
+          "exercise_id": 23
+        },
+        {
+          "exercise_id": 29
+        },
+        {
+          "exercise_id": 31
+        }
+      ]
+    },
+    {
+      "workout_id": "3",
+      "photo_url": "workout_3.jpg",
+      "name": "Chelsea",
+      "description": "5 pull ups 10 push ups 15 squats Each minute on the minute for 30mins",
+      "exercise": [
+        {
+          "exercise_id": 22
+        },
+        {
+          "exercise_id": 23
+        },
+        {
+          "exercise_id": 31
+        }
+      ]
+    },
+    {
+      "workout_id": "4",
+      "photo_url": "workout_4.jpg",
+      "name": "Christine",
+      "description": "500 meter row 12 deadlifts 21 box jumps",
+      "exercise": [
+        {
+          "exercise_id": 25
+        },
+        {
+          "exercise_id": 15
+        },
+        {
+          "exercise_id": 9
+        }
+      ]
+    }
+  ]
+}

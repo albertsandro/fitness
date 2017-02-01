@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:weightSum="10">
+
+
+    <TextView
+        android:id="@+id/tvFormName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/view_margin"
+        android:singleLine="true"
+        android:text="ACME Training Cert "
+        android:textColor="@color/black" />
+
+
+    <TextView
+
+        android:id="@+id/tvNoOfFields"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="4"
+        android:gravity="right|center_vertical"
+        android:paddingRight="@dimen/view_margin"
+        android:singleLine="true"
+        android:text="100"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>

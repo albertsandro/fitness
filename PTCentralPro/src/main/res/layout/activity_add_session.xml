@@ -1,0 +1,418 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gray"
+    tools:context="com.fitforbusiness.nafc.session.AddSessionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_gray"
+        android:orientation="vertical"
+
+        android:padding="@dimen/view_margin"
+        tools:ignore="ScrollViewSize">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white"
+            android:padding="@dimen/view_margin">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:ellipsize="end"
+                    android:paddingRight="@dimen/view_margin"
+                    android:singleLine="true"
+                    android:text="Title"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <EditText
+                    android:id="@+id/etTitle"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+
+                    android:hint="Title"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/view_margin" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:ellipsize="end"
+                    android:paddingRight="@dimen/view_margin"
+                    android:singleLine="true"
+
+
+                    android:text="Venue"
+                    android:textSize="@dimen/label_font_size"
+
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <EditText
+                    android:id="@+id/etVenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+
+                    android:hint="Venue"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/view_margin" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:ellipsize="end"
+                    android:paddingRight="@dimen/view_margin"
+                    android:singleLine="true"
+
+
+                    android:text="Start Date"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <Button
+                    android:id="@+id/bStartDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:gravity="left|center_vertical"
+                    android:hint="Start Date"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:ellipsize="end"
+                    android:paddingRight="@dimen/view_margin"
+                    android:singleLine="true"
+                    android:text="End Date"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <Button
+                    android:id="@+id/bEndDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:gravity="left|center_vertical"
+                    android:hint="End Date"
+                    android:paddingLeft="@dimen/view_margin"
+
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:ellipsize="end"
+                    android:paddingRight="@dimen/view_margin"
+                    android:singleLine="true"
+
+
+                    android:text="Start Time"
+                    android:textSize="@dimen/label_font_size"
+
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <Button
+                    android:id="@+id/bStartTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:gravity="left|center_vertical"
+                    android:hint="End Time"
+                    android:paddingLeft="@dimen/view_margin"
+
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:ellipsize="end"
+                    android:paddingRight="@dimen/view_margin"
+                    android:singleLine="true"
+
+
+                    android:text="End Time"
+                    android:textSize="@dimen/label_font_size"
+
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <Button
+                    android:id="@+id/bEndTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:gravity="left|center_vertical"
+                    android:hint="End Time"
+                    android:paddingLeft="@dimen/view_margin"
+
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:ellipsize="end"
+                    android:paddingRight="@dimen/view_margin"
+                    android:singleLine="true"
+
+
+                    android:text="Repeat"
+                    android:textSize="@dimen/label_font_size"
+
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <Button
+                    android:id="@+id/spnRepeat"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:entries="@array/repeat"
+                    android:gravity="left|center_vertical"
+                    android:hint="None"
+                    android:textColorHint="@color/gray"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:ellipsize="end"
+                    android:paddingRight="@dimen/view_margin"
+                    android:singleLine="true"
+
+
+                    android:text="Notes"
+                    android:textSize="@dimen/label_font_size"
+
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <EditText
+                    android:id="@+id/etNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+
+                    android:hint="Notes"
+                    android:inputType="textCapWords"
+                    android:paddingLeft="@dimen/view_margin" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:ellipsize="end"
+                    android:paddingRight="@dimen/view_margin"
+                    android:singleLine="true"
+                    android:text="Workout"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <Button
+                    android:id="@+id/spnWorkout"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginRight="@dimen/view_margin_half"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:singleLine="true"
+                    android:gravity="left|center_vertical"
+                    android:hint="Select Workout"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray" />
+
+                <Button
+                    android:id="@+id/bSetGoals"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/custom_btn_blue"
+                    android:ellipsize="end"
+                    android:ems="30"
+
+                    android:gravity="center|center_vertical"
+                    android:hint="End Time"
+                    android:padding="2dp"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:singleLine="true"
+                    android:text="Set Goals"
+                    android:textColor="@color/white" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="@dimen/view_margin"
+                    android:ellipsize="end"
+                    android:paddingRight="@dimen/view_margin"
+                    android:singleLine="true"
+                    android:text="Status"
+                    android:textSize="@dimen/label_font_size"
+                    tools:ignore="HardcodedText,SpUsage" />
+
+                <Button
+                    android:id="@+id/spnStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:entries="@array/status"
+                    android:gravity="left|center_vertical"
+                    android:hint="Select Status"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    tools:ignore="HardcodedText" />
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/bSave"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+
+                android:background="@drawable/custom_btn_orange"
+                android:text="Save"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/bCancel"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_btn_gray"
+                android:text="Cancel"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

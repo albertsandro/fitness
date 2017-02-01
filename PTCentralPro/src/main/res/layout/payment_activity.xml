@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/view_margin"
+    tools:context="com.fitforbusiness.nafc.payment.stripe.activity.PaymentActivity">
+
+
+    <fragment
+        android:id="@+id/payment_form"
+        class="com.fitforbusiness.nafc.payment.stripe.fragment.PaymentFormFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/token_list_title"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/payment_form"
+        android:layout_marginTop="25dp"
+        android:text="Payment Method" />
+
+    <fragment
+        android:id="@+id/token_list"
+        class="com.fitforbusiness.nafc.payment.stripe.fragment.TokenListFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/token_list_title" />
+
+</RelativeLayout>

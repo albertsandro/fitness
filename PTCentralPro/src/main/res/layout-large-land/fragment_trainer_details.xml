@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:ignore="ScrollViewSize">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/view_margin">
+
+            <Button
+                style="@style/brown_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:text="My Details"
+                tools:ignore="HardcodedText" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/view_margin">
+
+
+                        <ImageView
+
+                            android:id="@+id/ivTrainer"
+                            android:layout_width="110dp"
+                            android:layout_height="115dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+
+                            android:background="@drawable/green_button"
+                            android:clickable="true"
+                            tools:ignore="ContentDescription" />
+
+                        <Button
+                            android:id="@+id/bChooseFile"
+                            android:layout_width="110dp"
+                            android:layout_height="20dp"
+                            android:layout_alignBottom="@+id/ivTrainer"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:background="@drawable/custom_btn_choose"
+                            android:text="Select Image"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/etFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="@dimen/view_margin"
+                            android:background="@drawable/text_field"
+
+                            android:ems="30"
+                            android:hint="First Name"
+
+
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp" />
+
+                        <EditText
+                            android:id="@+id/etLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="@dimen/view_margin"
+                            android:layout_marginTop="@dimen/view_margin"
+                            android:background="@drawable/text_field"
+
+                            android:ems="30"
+                            android:hint="Last Name"
+
+
+                            android:inputType="textPersonName"
+                            android:paddingLeft="10dp" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:ellipsize="end"
+                        android:paddingRight="@dimen/view_margin"
+                        android:singleLine="true"
+
+                        android:text="Email"
+                        android:textSize="@dimen/label_font_size" />
+
+                    <EditText
+                        android:id="@+id/etEmailID"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_height"
+                        android:layout_marginTop="@dimen/view_margin"
+                        android:layout_weight="1"
+
+
+                        android:background="@drawable/text_field"
+                        android:hint="Email Address"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="10dp"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/view_margin"
+                        android:singleLine="true"
+                        android:text="Phone #"
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etPhoneNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/text_field"
+
+                        android:hint="Phone Number"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp"
+                        tools:ignore="HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:ellipsize="end"
+                        android:paddingRight="@dimen/view_margin"
+                        android:singleLine="true"
+                        android:text="Emergency Contact"
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etEmergencyContactAddress"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:hint="Emergency Contact"
+                        android:inputType="textPostalAddress"
+                        android:paddingLeft="@dimen/view_margin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text="Emergency #"
+                        android:textSize="@dimen/label_font_size"
+
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etEmergencyContactNo"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:hint="Emergency Contact No"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/view_margin"
+                        android:singleLine="true"
+                        android:text="DOB"
+                        android:textSize="@dimen/label_font_size"
+
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <Button
+                        android:id="@+id/bDOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:gravity="left|center_vertical"
+                        android:hint="Date of Birth"
+                        android:paddingLeft="@dimen/view_margin"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:gravity="right|center_vertical"
+                        android:text="Gender"
+
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <RadioGroup
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_margin"
+                            android:checked="false"
+                            android:text="Male"
+                            android:textColor="@color/black" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:checked="true"
+                            android:text="Female"
+                            android:textColor="@color/black" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:paddingRight="@dimen/view_margin"
+                        android:text="Company Name"
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etCompanyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:hint="Company Name"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/view_margin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:paddingRight="@dimen/view_margin"
+                        android:text="Company ID"
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etCompanyID"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:hint="Company ID"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/view_margin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:paddingRight="@dimen/view_margin"
+                        android:text="Tax ID"
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etTaxID"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:hint="Company Tax ID"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/view_margin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:paddingRight="@dimen/view_margin"
+                        android:text="Insurance #"
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etInsuranceNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:hint="Insurance Membership Number"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/view_margin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:paddingRight="@dimen/view_margin"
+                        android:text="Renewal"
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <Button
+                        android:id="@+id/bInsuranceDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_field"
+                        android:ellipsize="end"
+                        android:ems="30"
+                        android:gravity="left|center_vertical"
+                        android:hint="Insurance Renewal Date"
+                        android:paddingLeft="@dimen/view_margin"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/view_margin"
+                        android:text="Provider"
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etInsuranceProvider"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/view_margin"
+                        android:layout_marginTop="@dimen/view_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:hint="Insurance  Provider"
+                        android:inputType="text"
+
+                        android:paddingLeft="@dimen/view_margin" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/view_margin">
+
+            <Button
+                style="@style/brown_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+
+                android:text="Business Details"
+                tools:ignore="HardcodedText" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin">
+
+                <!--<TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right|center_vertical"
+                        android:layout_marginLeft="@dimen/view_margin"
+                        android:text="Dwolla ID"
+                        android:textSize="20dp"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etDwollaID"
+                        style="@style/input_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/view_margin"
+                        android:ems="30"
+                        android:hint="Dwolla ID"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:layout_weight="1"></EditText>
+                </TableRow>-->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/view_margin"
+
+                        android:text="PT License #"
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etPTLicenseNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+
+
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+
+                        android:hint="PT License No"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/view_margin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/view_margin"
+
+                        android:text="PT Renewal"
+                        android:textSize="@dimen/label_font_size"
+
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <Button
+                        android:id="@+id/bPTRenewalDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_field"
+                        android:gravity="left|center_vertical"
+
+                        android:hint="PT Renewal Date"
+                        android:paddingLeft="@dimen/view_margin"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/view_margin"
+
+                        android:text="First Aid Renewal"
+                        android:textSize="@dimen/label_font_size"
+
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <Button
+                        android:id="@+id/bFirstAidCertRenewalDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:gravity="left|center_vertical"
+                        android:hint="First Aid Cert Renewal"
+                        android:paddingLeft="@dimen/view_margin"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/view_margin"
+
+                        android:text="CPR Renewal"
+                        android:textSize="@dimen/label_font_size"
+
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <Button
+                        android:id="@+id/bCPRCertRenewalDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:gravity="left|center_vertical"
+                        android:hint="CPR Cert Renewal Date"
+                        android:paddingLeft="@dimen/view_margin"
+
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/view_margin"
+
+                        android:text="AED Renewal"
+                        android:textSize="@dimen/label_font_size"
+
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <Button
+                        android:id="@+id/bAEDCertRenewalDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:gravity="left|center_vertical"
+                        android:hint="AED Cert Renewal Date"
+                        android:paddingLeft="@dimen/view_margin"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/view_margin"
+
+                        android:text="Website"
+                        android:textSize="@dimen/label_font_size"
+
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etWebsite"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+
+
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+
+                        android:hint="Website"
+                        android:inputType="textUri"
+                        android:paddingLeft="@dimen/view_margin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/view_margin"
+
+                        android:text="Experience"
+                        android:textSize="@dimen/label_font_size"
+
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etExperience"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+
+
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+
+                        android:hint="Experience"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/view_margin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/view_margin"
+                        android:text="Facebook"
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etFacebookID"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:hint="Facebook"
+                        android:inputType="textUri"
+                        android:paddingLeft="@dimen/view_margin" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/view_margin"
+                        android:text="Twitter"
+                        android:textSize="@dimen/label_font_size"
+                        tools:ignore="HardcodedText,SpUsage" />
+
+                    <EditText
+                        android:id="@+id/etTwitterID"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/text_field"
+                        android:ems="30"
+                        android:hint="Twitter"
+                        android:inputType="textUri"
+                        android:paddingLeft="@dimen/view_margin"
+                        tools:ignore="HardcodedText" />
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

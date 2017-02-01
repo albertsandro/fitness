@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/view_margin">
+
+        <TextView
+            android:id="@+id/tvSession"
+            style="@style/header_orange"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center"
+            android:singleLine="true"
+            android:text="Clients"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_font_size" />
+
+        <ListView
+            android:id="@+id/lvClientList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

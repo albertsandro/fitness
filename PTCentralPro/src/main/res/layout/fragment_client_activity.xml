@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    tools:context="com.fitforbusiness.nafc.session.PersonalTrainingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_margin"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            style="@style/brown_button"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="@dimen/view_margin"
+            android:layout_weight="1"
+            android:text="Personal Training Activity"
+            android:visibility="visible"
+            tools:ignore="HardcodedText" />
+
+        <Button
+
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="@dimen/view_margin"
+            android:layout_marginTop="@dimen/view_margin"
+            android:layout_weight="1"
+            android:background="@drawable/custom_btn_orange"
+            android:text="+"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvClientActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/view_margin"
+        android:layout_marginRight="@dimen/view_margin" />
+</LinearLayout>
+

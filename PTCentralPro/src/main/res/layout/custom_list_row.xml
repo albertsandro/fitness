@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical"
+    android:padding="@dimen/view_margin_half">
+
+
+    <TextView
+
+        android:id="@+id/tvInstitute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:singleLine="true"
+        android:text="Health Fitness Institute at Stamford Hospital"
+        android:textColor="@color/black"
+        android:textSize="@dimen/label_font_size"
+
+        />
+
+    <TableRow
+        android:id="@+id/tableRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="2dp"
+
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/tvCEC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="ACME Training Cert "
+            android:textColor="@color/black" />
+
+
+        <TextView
+
+            android:id="@+id/tvPoints"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="100 pts"
+            android:textColor="@color/black" />
+
+
+        <TextView
+
+            android:id="@+id/tvNoOfPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="pts"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+
+            android:singleLine="true"
+            android:text="18th Jun 2014"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivHandle" />
+    </TableRow>
+
+</LinearLayout>

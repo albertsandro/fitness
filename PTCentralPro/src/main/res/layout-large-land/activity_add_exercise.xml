@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:padding="@dimen/view_margin"
+        android:background="@drawable/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:background="@drawable/bg_white"
+            android:padding="@dimen/view_margin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                >
+
+                <ImageView
+
+                    android:id="@+id/ivExercise"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:src="@drawable/green_button"
+                    tools:ignore="ContentDescription" />
+
+                <Button
+                    android:id="@+id/bChooseFile"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/ivExercise"
+                    android:layout_alignLeft="@id/ivExercise"
+                    android:background="@drawable/custom_btn_choose"
+                    android:text="Select Image"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/etExerciseName"
+               android:background="@drawable/text_field"
+                android:inputType="textWebEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/view_margin"
+
+                android:ems="15"
+                android:hint="Name"
+
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/etMuscleGroupName"
+
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/view_margin"
+                android:background="@drawable/text_field"
+                android:inputType="textWebEditText"
+
+                android:hint="Muscle Group"
+
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/etDescription"
+
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/view_margin"
+
+                android:background="@drawable/text_field"
+                android:inputType="textWebEditText"
+                android:hint="Description"
+
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/etTag"
+                android:background="@drawable/text_field"
+                android:inputType="textWebEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/view_margin"
+
+                android:ems="15"
+                android:hint="Tag"
+
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/bg_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bAddMeasurement"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/view_margin"
+                android:layout_marginRight="@dimen/view_margin"
+                android:layout_marginTop="@dimen/view_margin"
+                android:background="@drawable/custom_btn_green"
+                android:text="Add Measurement"
+                android:textColor="#FFFFFF" />
+
+            <ListView
+
+                android:id="@+id/lvMeasurement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/view_margin"
+                android:layout_marginRight="@dimen/view_margin">
+
+            </ListView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

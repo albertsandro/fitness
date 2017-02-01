@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FFB</string>
+
+    <string name="title_section1">Home</string>
+    <string name="title_section2">My Calendar</string>
+    <string name="title_section3">Client</string>
+    <string name="title_section4">Trainer</string>
+    <string name="title_section5">\t Accreditation</string>
+    <string name="title_section6">Workouts/Exercises</string>
+    <string name="title_section7">Settings</string>
+    <string name="title_section8">Logout</string>
+    <!-- The key here is only for safe reference and changes to this value won't effect the actual key -->
+    <string name="deep_link_key">deeplink</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="signup">Register now</string>
+    <string name="new_user">New user?</string>
+    <string name="first_name">First Name</string>
+
+    <string name="title_activity_assessment_form">Assessment Forms</string>
+    <string name="assessment_form_header">Client Assessment Forms</string>
+    <string name="title_activity_add_assessment">Assessment Form Builder</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="title_activity_add_client">New Client</string>
+
+    <string name="title_activity_add_group">New Group</string>
+    <string name="title_activity_contact_list">Contact List</string>
+    <string name="title_activity_client_detail">My Client</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_session">New Session</string>
+    <string name="title_activity_set_goals">Set Goal</string>
+    <string name="title_activity_add_pre_workout_assessment">Assessment</string>
+    <string name="title_activity_add_member_ship">New Membership</string>
+    <string name="title_activity_add_exercise">New Exercise</string>
+    <string name="title_activity_pick_item_list">Pick Item</string>
+    <string name="title_activity_view_exercise">Exercise</string>
+    <string name="title_activity_view_session">Session</string>
+    <string name="contacts_list_search_results_title">Contacts List Search for \"%s\"</string>
+
+    <array name="repeat">
+        <item name="None">None</item>
+        <item name="Daily">Daily</item>
+        <item name="Weekly">Weekly</item>
+        <item name="Monthly">Monthly</item>
+    </array>
+    <array name="status">
+        <item name="1">Scheduled</item>
+        <item name="2">Attended</item>
+        <item name="3">Missed</item>
+        <item name="4">Cancelled</item>
+        <item name="5">Postponed</item>
+    </array>
+
+    <string name="defaultDate"></string>
+    <string name="title_activity_goal_summary">Goal Summary</string>
+    <string name="title_activity_record_workout">Record Workout</string>
+    <string name="title_activity_item_pick_list_with_image">Select Client</string>
+    <string name="title_activity_assessment_form_list">Assessments</string>
+    <string name="title_activity_temp_client_detail">Client Detail</string>
+    <string name="image_selector_button_label">Select Image</string>
+    <string name="title_activity_contacts_list">Contacts List</string>
+    <string name="title_activity_contact_detail">Contact Detail</string>
+    <string name="app_description">This is a sample app, demonstrating use of the Android system Contacts Provider.</string>
+    <string name="imageview_description">Contact Thumbnail</string>
+    <string name="address_button_description">View Address</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_add_contact">Add Contact</string>
+    <string name="menu_edit_contact">Edit Contact</string>
+    <string name="no_contacts">No Contacts Found</string>
+    <string name="no_contact_selected">No Contact Selected</string>
+    <string name="search_hint">Find contacts</string>
+
+    <!--
+         Used for the AlphabetIndexer in ContactsListFragment to provide quick navigation by
+         alphabet using ListView fast scroll.
+    -->
+    <string name="alphabet">ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!--
+         When using ContactsContract.Contacts#CONTENT_FILTER_URI to search contacts, a match occurs
+         when using a number of different fields, such as name, e-mail address, address, phone
+         number, etc. When a match occurs that is not the name, there is currently no way to tell
+         which other field was matched. This string is displayed in the secondary display text in
+         ContactsListFragment when a search query match occurs that is not the display name.
+    -->
+    <string name="search_match_other">Matches Other Field</string>
+    <string name="no_address">No addresses found</string>
+    <string name="no_intent_found">No application found to handle this action</string>
+    <string name="progressMessage">Error</string>
+    <string name="ok">OK</string>
+    <string name="validationErrors">error</string>
+    <string name="endingIn">endinglogged in</string>
+    <string name="addPayment">Add</string>
+    <string name="btnConnectText">Stripe Connect</string>
+    <string name="btnDwollaConnectText">Dwolla Connect</string>
+    <string name="dialogDisconnectText">Disconnect</string>
+    <string name="btnDialogYes">Yes</string>
+    <string name="btnDialogNo">No</string>
+    <string name="btnDisconnectText">Disconnect</string>
+
+    <string-array name="interval_period_title">
+        <item>Week</item>
+        <item>Month</item>
+    </string-array>
+    <string-array name="interval_period_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="interval_month">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="interval_week">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+    </string-array>
+
+    <drawable name="red_drawable">#CCAA1883</drawable>
+    <drawable name="green_drawable">#CC123Bff</drawable>
+
+    <string name="dialog_message_send_email_to_clients">By clicking SAVE you will send a payment request via email to your client for the filled in details.\nYou can view all payment statuses on ptcentralpro.com using your app login details to check all transactions.</string>
+
+    <string name="title_cost_per_session">Cost Per Session</string>
+    <string name="title_package_total">Package Total</string>
+    <string name="title_ptcentral_pro">PTCentral Pro</string>
+    <string name="dialog_message_default_currency_not_set">Please set default currency in the setting.</string>
+    <string name="title_activity_dwolla_oauth">Dwolla</string>
+    <string name="title_activity_parqassessment_form">PARQ Assessment Form</string>
+    <string name="title_activity_web_view">Web</string>
+    <string name="title_activity_dropbox">DropBox</string>
+    <string name="title_activity_twitter">Twitter</string>
+    <string name="title_activity_stripe">Stripe</string>
+    <string name="title_activity_stripe_oauth">Stripe</string>
+    <string name="title_activity_stripe_payment">Stripe</string>
+    <string name="title_activity_contects_list">Contacts</string>
+    <string name="title_activity_group_detail">My Group</string>
+    <string name="title_activity_workout">Workout</string>
+    <string name="title_activity_new_workout">New Workout</string>
+    <string name="title_activity_member_ship">Membership</string>
+    <string name="title_activity_set_goal">Set Goals</string>
+    <string name="title_activity_view_qualification">Qualification</string>
+    <string name="title_activity_new_qualification">New Qualification</string>
+    <string name="title_setup_progress_dialog">Please wait...Setting things for you..</string>
+
+    <string name="text_notification" formatted="false">Upcoming %s Session With %s.</string>
+    <string name="lblNativeStatus">Calendar Event</string>
+    <string name="action_delete">Delete</string>
+    <string name="CantDelete">Can\'t delete calendar events.</string>
+    <string name="alreadyOnAws">User already exists!</string>
+
+</resources>

@@ -1,0 +1,278 @@
+<resources>
+
+
+    <style name="Theme.Styled" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarItemBackground">@drawable/selectable_background</item>
+        <item name="actionBarTabStyle">@style/Widget.Styled.ActionBar.TabView</item>
+        <item name="actionBarStyle">@style/Widget.Styled.ActionBar</item>
+        <item name="actionDropDownStyle">@style/Widget.Styled.Spinner.DropDown.ActionBar</item>
+        <item name="dropDownListViewStyle">@style/Widget.Styled.ListView.DropDown</item>
+        <item name="popupMenuStyle">@style/Widget.Styled.PopupMenu</item>
+        <item name="titleTextStyle">@style/Widget.Styled.ActionBar.Title</item>
+        <item name="actionBarTabTextStyle">@style/Widget.Styled.ActionBar.TabText</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Styled.ActionBar.OverFlow</item>
+        <item name="android:panelFullBackground">@drawable/button_orange</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="icon">@android:color/transparent</item>
+        <item name="background">@drawable/ab_background_shape</item>
+        <item name="backgroundSplit">@drawable/button_gray</item>
+        <item name="progressBarStyle">@style/Widget.Styled.ProgressBar.Horizontal</item>
+
+
+    </style>
+
+
+    <style name="Widget.Styled.ActionBar.TabView" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab</item>
+    </style>
+
+    <style name="Widget.Styled.Spinner.DropDown.ActionBar" parent="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_styled</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background</item>
+    </style>
+
+    <style name="Widget.Styled.ProgressBar.Horizontal" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+    </style>
+
+    <style name="Widget.Styled.PopupMenu" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_styled</item>
+    </style>
+
+    <style name="Widget.Styled.ListView.DropDown" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background</item>
+    </style>
+
+    <style name="Widget.Styled.ActionBar.Title" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="Widget.Styled.ActionBar.TabText" parent="@style/Widget.AppCompat.Base.ActionBar.TabText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <style name="Widget.Styled.ActionBar.TabText.ItemTextColor" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="Widget.Styled.ActionBar.OverFlow" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/add</item>
+    </style>
+
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- Base application theme. -->
+    <!--
+     Base application theme, dependent on API level. This theme is replaced
+     by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+    <style name="TitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TabText" parent="@style/Widget.AppCompat.Base.ActionBar.TabText">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Base.ActionBar">
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_styled</item>
+        <item name="android:displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="displayOptions">showHome|homeAsUp|showTitle</item>
+        <item name="android:icon">@android:color/transparent</item>
+        <item name="android:background">@color/actionbar_color</item>
+        <item name="backgroundStacked">#ff2e0000</item>
+        <item name="android:titleTextStyle">@style/TitleText</item>
+        <item name="titleTextStyle">@style/TitleText</item>
+    </style>
+
+
+    <style name="tabStyle" parent="@style/Widget.AppCompat.Base.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab</item>
+        <item name="backgroundStacked">#ff2e0000</item>
+        <item name="android:titleTextStyle">@style/TitleText</item>
+        <item name="titleTextStyle">@style/TitleText</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabStyle">@style/tabStyle</item>
+    </style>
+
+ >
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <item name="actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarTabStyle">@style/tabStyle</item>
+    </style>
+
+    <style name="AppCustomTheme" parent="AppBaseTheme">
+
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabStyle">@style/tabStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+    </style>
+    -->
+    <style name="input_field_name">
+        <item name="android:layout_marginLeft">@dimen/view_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_margin</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="input_field">
+        <item name="android:ems">10</item>
+        <item name="android:layout_marginLeft">@dimen/view_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_margin</item>
+        <item name="android:background">@drawable/text_field</item>
+
+    </style>
+
+    <style name="text_btn">
+        <item name="android:ems">10</item>
+        <item name="android:layout_marginLeft">@dimen/view_margin</item>
+        <item name="android:layout_marginRight">@dimen/view_margin</item>
+        <item name="android:layout_marginTop">@dimen/view_margin</item>
+        <item name="android:background">@drawable/bg_white</item>
+    </style>
+
+    <style name="check_box">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="brown_button">
+        <item name="android:background">@drawable/button_orange</item>
+        <item name="android:padding">@dimen/view_margin</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="green_button">
+        <item name="android:background">@drawable/button_gray</item>
+        <item name="android:padding">@dimen/view_margin</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="header_orange">
+        <item name="android:background">@drawable/button_orange</item>
+        <item name="android:padding">@dimen/view_margin_half</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/header_font_size</item>
+        <item name="android:gravity">center|center_vertical</item>
+    </style>
+
+    <!--   <Button
+                    android:id="@+id/spnStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_field"
+                    android:ems="30"
+                    android:entries="@array/status"
+                    android:gravity="left|center_vertical"
+                    android:hint="Select Status"
+                    android:paddingLeft="@dimen/view_margin"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/black"
+                    tools:ignore="HardcodedText" />-->
+    <style name="button_text_box">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">@dimen/view_margin</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:ems">10</item>
+        <item name="android:background">@drawable/text_field</item>
+
+    </style>
+
+    <style name="textBoldSelected">
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="MessageEditText">
+        <item name="android:inputType">text|textMultiLine|textCapSentences</item>
+        <item name="android:gravity">top</item>
+        <item name="android:minLines">5</item>
+
+        <item name="android:background">@drawable/text_field</item>
+        <item name="android:hint">@string/com_appboy_feedback_form_message</item>
+    </style>
+
+    <style name="FeedList">
+        <item name="android:background">@android:color/transparent</item>
+
+        <item name="android:divider">@android:color/transparent</item>
+
+        <item name="android:paddingLeft">@dimen/view_margin</item>
+        <item name="android:paddingRight">@dimen/view_margin</item>
+        <item name="android:paddingBottom">@dimen/view_margin</item>
+        <item name="android:paddingTop">@dimen/view_margin</item>
+
+    </style>
+
+
+    <style name="SwitchText">
+        <item name="android:paddingLeft">8px</item>
+        <item name="android:paddingBottom">8px</item>
+        <item name="android:textColor">#FFeeFFee</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:shadowColor">#BB000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="mySwitchStyle">
+        <item name="track">@drawable/switch_track_green</item>
+        <item name="thumb">@drawable/background_fenced</item>
+        <item name="switchTextAppearanceAttrib">@style/mySwitchTextAppearance</item>
+        <item name="textOn">ON</item>
+        <item name="textOff">OFF</item>
+        <item name="pushStyle">false</item>
+        <item name="textOnThumb">true</item>
+        <item name="thumbExtraMovement">0dp</item>
+        <item name="thumbTextPadding">6dp</item>
+        <item name="trackTextPadding">6dp</item>
+        <item name="switchMinWidth">69dp</item>
+        <item name="switchMinHeight">45dp</item>
+        <item name="switchPadding">6dp</item>
+    </style>
+
+    <style name="mySwitchTextAppearance">
+        <item name="textColor">#FFeeFFee</item>
+        <item name="textColorHighlight">#FFeeFFee</item>
+        <item name="textColorHint">#FFeeFFee</item>
+        <item name="textColorLink">#FFeeFFee</item>
+        <item name="textSize">16sp</item>
+        <item name="textStyle">normal</item>
+    </style>
+
+</resources>

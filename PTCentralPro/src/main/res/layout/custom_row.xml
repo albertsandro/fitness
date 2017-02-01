@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal">
+    <com.fitforbusiness.framework.view.RoundedImageView
+        android:id="@+id/ivImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_action_add_person"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/tvTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/view_margin"
+        android:text="TextView"
+        android:textColor="@color/black" />
+</LinearLayout>

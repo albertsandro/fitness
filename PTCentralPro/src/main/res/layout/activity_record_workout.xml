@@ -1,0 +1,16 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/view_margin"
+    android:id="@+id/ourParent"
+    android:background="@drawable/bg_white"
+    tools:context="com.fitforbusiness.nafc.session.RecordWorkoutActivity">
+
+    <LinearLayout
+        android:id="@+id/llRecordWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</ScrollView>

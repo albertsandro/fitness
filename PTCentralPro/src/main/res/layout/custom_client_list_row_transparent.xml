@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="5">
+
+    <com.fitforbusiness.framework.view.RoundedImageView
+        android:id="@+id/ivRowImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_person_placeholder" />
+
+
+    <TextView
+        android:id="@+id/tvFirstName"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="First Name"
+        android:textColor="@color/black" />
+
+
+    <TextView
+
+        android:id="@+id/tvSecondLabel"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textColor="@color/black" />
+
+    <TextView
+
+        android:id="@+id/tvThirdLabel"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textColor="@color/black" />
+
+</LinearLayout>

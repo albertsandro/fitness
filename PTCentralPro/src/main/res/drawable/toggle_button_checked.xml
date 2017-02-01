@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/navigation_button_color" />
+    <stroke
+        android:width="1dp"
+        android:color="#ffa4bdd8" />
+    <corners android:radius="2dp" />
+    <gradient
+        android:angle="-90"
+        android:startColor="@color/navigation_button_color"
+        android:centerColor="#ff3e5ba4"
+        android:endColor="@color/navigation_button_color"/>
+</shape>

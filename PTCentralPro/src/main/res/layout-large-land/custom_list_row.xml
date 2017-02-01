@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_btn_bg"
+
+    android:orientation="horizontal"
+    android:padding="3dp"
+    android:weightSum="10">
+
+
+    <TextView
+        android:id="@+id/tvCEC"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:text="ACME Training Cert "
+        android:textColor="@color/black" />
+
+
+    <TextView
+
+        android:id="@+id/tvPoints"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:text="100"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:text="18th Jun 2014"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/tvInstitute"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:text="Health Fitness Institute at Stamford Hospital"
+        android:textColor="@color/black" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivHandle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:src="@drawable/custom_btn_dots"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:src="@drawable/custom_btn_delete"
+        android:visibility="gone" />
+</LinearLayout>

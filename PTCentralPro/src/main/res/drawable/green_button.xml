@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    <item android:state_pressed="true"><shape>
+            <gradient android:angle="270" android:endColor="@color/green_start" android:startColor="@color/green_end" />
+
+            <stroke android:width="1dp" android:color="@color/green_stroke" />
+
+            <corners android:radius="4dp" />
+
+            <padding android:bottom="@dimen/view_padding" android:left="@dimen/view_padding" android:right="@dimen/view_padding" android:top="@dimen/view_padding" />
+        </shape></item>
+    <item android:state_enabled="false"><shape>
+            <gradient android:angle="270" android:endColor="@color/disabled_start" android:startColor="@color/disabled_end" />
+
+            <stroke android:width="1dp" android:color="@color/disabled_stroke" />
+
+            <corners android:radius="4dp" />
+
+            <padding android:bottom="@dimen/view_padding" android:left="@dimen/view_padding" android:right="@dimen/view_padding" android:top="@dimen/view_padding" />
+        </shape></item>
+    <item><shape>
+            <gradient android:angle="270" android:endColor="@color/green_end" android:startColor="@color/green_start" />
+
+            <stroke android:width="1dp" android:color="@color/green_stroke" />
+
+            <corners android:radius="4dp" />
+
+            <padding android:bottom="@dimen/view_padding" android:left="@dimen/view_padding" android:right="@dimen/view_padding" android:top="@dimen/view_padding" />
+        </shape></item>
+    -->
+    <item>
+        <shape>
+            <solid android:color="@color/btn_bg" />
+
+            <corners android:radius="@dimen/view_margin" />
+        </shape>
+    </item>
+
+</selector>

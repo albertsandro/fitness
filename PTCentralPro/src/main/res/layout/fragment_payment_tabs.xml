@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/view_margin"
+    tools:context="com.fitforbusiness.nafc.membership.MembershipActivityFragment">
+
+
+    <Button
+        style="@style/brown_button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Payments"
+        android:visibility="visible"
+        tools:ignore="HardcodedText" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Training Package"
+            android:id="@+id/textView"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_margin="1dp"
+            android:background="#ff3e3e3e"
+            android:textColor="#ffe1e1e1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Total"
+            android:id="@+id/textView2"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_margin="1dp"
+            android:background="#ff3e3e3e"
+            android:textColor="#ffe1e1e1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Date"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_margin="1dp"
+            android:background="#ff3e3e3e"
+            android:textColor="#ffe1e1e1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groups"
+            android:background="@drawable/tab_indicator_holo"
+            android:id="@+id/btnGroups"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clients"
+            android:background="@drawable/tab_indicator_holo"
+            android:id="@+id/btnClients"
+            android:layout_weight="1"
+            android:layout_margin="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

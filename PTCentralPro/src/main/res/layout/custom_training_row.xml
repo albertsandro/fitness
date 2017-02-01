@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_btn_bg"
+    android:orientation="horizontal"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:weightSum="9">
+
+    <TextView
+
+        android:id="@+id/tvText1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="3"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/view_margin"
+        android:singleLine="true"
+        android:text="text1"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/tvText2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="2"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="18th Jun 2014"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/tvText3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="text2"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tvText4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:ellipsize="end"
+        android:paddingRight="@dimen/view_margin"
+        android:gravity="right|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:text="error"/>
+</LinearLayout>

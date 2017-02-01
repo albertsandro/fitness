@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appboy_feed_swipe_container"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/feed_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/feed_loading_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15.0sp"/>
+
+        <LinearLayout
+            android:id="@+id/feed_network_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15.0sp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Appboy.Feed.NetworkErrorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@id/android:empty"
+                style="@style/Appboy.Feed.NetworkErrorBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feed_empty_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="15.0sp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/Appboy.Feed.Empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <TextView
+           android:layout_marginTop="@dimen/view_margin"
+            android:layout_marginLeft="@dimen/view_margin"
+            android:layout_marginRight="@dimen/view_margin"
+            style="@style/header_orange"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Feeds" />
+
+        <ListView
+            android:id="@android:id/list"
+            style="@style/FeedList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/feed_transparent_full_bounds_container_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

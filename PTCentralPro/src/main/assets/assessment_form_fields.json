@@ -1,0 +1,79 @@
+{
+    "fields": [
+               {
+               "title": "Height",
+               "type": "number",
+               "sort_order": 0
+               },
+               {
+               "title": "Weight",
+               "type": "number”,a
+               "sort_order": 1
+               },
+               {
+               "title": "BP (Systolic)",
+               "type": "number",
+               "sort_order": 2
+               },
+               {
+               "title": "BP (Diastolic)",
+               "type": "number",
+               "sort_order": 3
+               },
+               {
+               "title": "Resting HR",
+               "type": "number",
+               "sort_order": 4
+               },
+               {
+               "title": "Passive HR",
+               "type": "number",
+               "sort_order": 5
+               },
+               {
+               "title": "Neck",
+               "type": "number",
+               "sort_order": 6
+               },
+               {
+               "title": "Shoulders",
+               "type": "number",
+               "sort_order": 7
+               },
+               {
+               "title": "Chest",
+               "type": "number",
+               "sort_order": 8
+               },
+               {
+               "title": "Waist",
+               "type": "number",
+               "sort_order": 9
+               },
+               {
+               "title": "Hips",
+               "type": "number",
+               "sort_order": 10
+               },
+               {
+               "title": "Thighs",
+               "type": "number",
+               "sort_order": 11
+               },
+               {
+               "title": "Calves",
+               "type": "number",
+               "sort_order": 12
+               },
+               {
+               "title": "Biceps",
+               "type": "number",
+               "sort_order": 13
+               },
+               {
+               "title": "Forearms",
+               "type": "number",
+               "sort_order": 14
+               }
+               ]
+}

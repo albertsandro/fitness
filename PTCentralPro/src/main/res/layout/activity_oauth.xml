@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/view_margin"
+    android:background="@drawable/bg_white"
+    tools:context="com.fitforbusiness.nafc.payment.stripe.activity.StripOAuthActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="connect using Dialog"
+        android:visibility="gone" />
+
+    <com.fitforbusiness.oauth.stripe.StripeButton
+        android:id="@+id/btnConnect1"
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:visibility="gone" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="connect using Activity"
+        android:visibility="gone" />
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:id="@+id/ivStripeImage"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/custom_btn_blue"
+        android:src="@drawable/ic_stripe_logo" />
+
+    <com.fitforbusiness.oauth.stripe.StripeButton
+
+        android:id="@+id/btnConnect2"
+        android:layout_width="200dip"
+        android:layout_height="45dp"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="20dip" />
+
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="Not connected"
+        android:visibility="gone" />
+
+</LinearLayout>
